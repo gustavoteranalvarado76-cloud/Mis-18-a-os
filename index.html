@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#d9f1ff">
+    <title>Gustavo - Mis 18 años</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- PORTADA -->
+    <section id="portada" class="portada">
+        <div class="tarjeta-portada">
+            <p class="sobre-titulo">UNA FECHA ESPECIAL</p>
+            <h1>GUSTAVO</h1>
+            <h2>MIS 18 AÑOS</h2>
+            <p>Me encantaría que me acompañaras a celebrar.</p>
+            <button id="botonInvitacion">ABRIR INVITACIÓN</button>
+        </div>
+    </section>
+
+    <!-- INVITACIÓN -->
+    <main id="invitacion" class="oculto">
+
+        <section class="bienvenida">
+            <p class="sobre-titulo">¡ESTÁS INVITADO!</p>
+            <h1>GUSTAVO</h1>
+            <h2>MIS 18 AÑOS</h2>
+            <p>Un momento especial merece ser compartido con personas especiales.</p>
+        </section>
+
+        <!-- CONTADOR -->
+        <section class="contador-seccion">
+            <p class="sobre-titulo">LA CUENTA REGRESIVA COMIENZA</p>
+            <h2>FALTA POCO PARA CELEBRAR</h2>
+
+            <div class="contador">
+                <div class="unidad">
+                    <span id="dias">00</span>
+                    <small>DÍAS</small>
+                </div>
+                <div class="unidad">
+                    <span id="horas">00</span>
+                    <small>HORAS</small>
+                </div>
+                <div class="unidad">
+                    <span id="minutos">00</span>
+                    <small>MINUTOS</small>
+                </div>
+                <div class="unidad">
+                    <span id="segundos">00</span>
+                    <small>SEGUNDOS</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- DATOS DEL EVENTO -->
+        <section class="evento">
+            <p class="sobre-titulo">ACOMPÁÑAME</p>
+            <h2>DETALLES DEL EVENTO</h2>
+
+            <div class="detalles">
+                <div class="detalle">
+                    <span>📅</span>
+                    <h3>FECHA</h3>
+                    <p>09 DE ENERO DE 2027</p>
+                </div>
+
+                <div class="detalle">
+                    <span>🕒</span>
+                    <h3>HORA</h3>
+                    <p>3:30 P. M.</p>
+                </div>
+
+                <div class="detalle">
+                    <span>📍</span>
+                    <h3>LUGAR</h3>
+                    <p>Sur 111-b, #2318, ote 102 y recreo</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARRUSEL DE FOTOGRAFÍAS -->
+        <section class="galeria">
+            <p class="sobre-titulo">ALGUNOS RECUERDOS</p>
+            <h2>MIS FOTOGRAFÍAS</h2>
+            <p class="descripcion">Momentos que quiero compartir contigo.</p>
+
+            <div class="carrusel">
+                <button type="button" id="anterior" class="flecha" aria-label="Fotografía anterior">❮</button>
+
+                <div class="marco-foto">
+                    <img id="fotoCarrusel" src="./foto1.jpg.jpeg" alt="Fotografía de Gustavo">
+                </div>
+
+                <button type="button" id="siguiente" class="flecha" aria-label="Fotografía siguiente">❯</button>
+            </div>
+
+            <div id="indicadores" class="indicadores"></div>
+            <p id="numeroFoto" class="numero-foto">1 / 4</p>
+        </section>
+
+        <!-- MESA DE REGALOS -->
+        <section class="regalos">
+            <p class="sobre-titulo">UN DETALLE ESPECIAL</p>
+            <h2>MESA DE REGALOS</h2>
+            <p class="descripcion">
+                Tu presencia es mi mejor regalo. Si deseas tener un detalle conmigo,
+                estos son algunos de mis favoritos.
+            </p>
+
+            <div class="regalos-grid">
+                <article class="regalo">
+                    <img src="cloud.avif" alt="Perfume Cloud de Ariana Grande">
+                    <h3>Cloud</h3>
+                </article>
+
+                <article class="regalo">
+                    <img src="cloud-aurora.avif" alt="Perfume Cloud Aurora">
+                    <h3>Cloud Aurora</h3>
+                </article>
+
+                <article class="regalo">
+                    <img src="thank-u-next.webp" alt="Perfume Thank U, Next">
+                    <h3>Thank U, Next</h3>
+                </article>
+
+                <article class="regalo">
+                    <img src="mod-vanilla.jpg" alt="Perfume Mod Vanilla">
+                    <h3>Mod Vanilla</h3>
+                </article>
+            </div>
+        </section>
+
+        <!-- MENSAJE FINAL -->
+        <section class="final">
+            <h2>¡TE ESPERO!</h2>
+            <p>Será un placer compartir este día contigo.</p>
+            <h3>GUSTAVO</h3>
+            <p>09 · 01 · 2027</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>GUSTAVO · MIS 18 AÑOS</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
